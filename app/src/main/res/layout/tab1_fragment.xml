@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scHomePage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/rlKategori2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlKategori"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/relativelayoutdraw">
+
+            <TextView
+                android:id="@+id/txtSonEklenen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="10dp"
+                android:text="Son Eklenen Etkinlikler"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="25dp"
+                android:id="@+id/rwSonEklenenler"
+                android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+            
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlOneCikan"
+            android:layout_width="match_parent"
+            android:layout_height="214dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/relativelayoutdraw">
+
+            <TextView
+                android:id="@+id/txtOneCikan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="10dp"
+                android:text="Öne Çıkan Etkinlikler"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ScrollView
+                android:id="@+id/scOneCikan"
+                android:layout_width="wrap_content"
+                android:layout_height="142dp"
+                android:layout_alignBottom="@+id/txtOneCikan"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="26dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgAraba"
+                        android:layout_width="103dp"
+                        android:layout_height="130dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_toEndOf="@+id/imgFutbol"
+                        android:background="@drawable/araba" />
+
+                    <ImageView
+                        android:id="@+id/imgFutbol"
+                        android:layout_width="103dp"
+                        android:layout_height="130dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_toEndOf="@+id/imgKonser"
+                        android:background="@drawable/futbol" />
+
+                    <ImageView
+                        android:id="@+id/imgKonser"
+                        android:layout_width="103dp"
+                        android:layout_height="130dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/konser" />
+
+                    <ImageView
+                        android:id="@+id/imgKonser2"
+                        android:layout_width="103dp"
+                        android:layout_height="130dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_toEndOf="@+id/imgAraba"
+                        android:background="@drawable/konser2" />
+
+                </RelativeLayout>
+
+            </ScrollView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlKategori"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/rlOneCikan"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/relativelayoutdraw">
+
+            <ScrollView
+                android:id="@+id/scOneCikan"
+                android:layout_width="wrap_content"
+                android:layout_height="163dp"
+                android:layout_alignBottom="@+id/txtOneCikan"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgAraba"
+                        android:layout_width="103dp"
+                        android:layout_height="130dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_toEndOf="@+id/imgFutbol"
+                        android:background="@drawable/spor" />
+
+                    <ImageView
+                        android:id="@+id/imgFutbol"
+                        android:layout_width="103dp"
+                        android:layout_height="130dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_toEndOf="@+id/imgKonser"
+                        android:background="@drawable/teknoloji" />
+
+                    <ImageView
+                        android:id="@+id/imgKonser"
+                        android:layout_width="103dp"
+                        android:layout_height="130dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/doga" />
+
+                    <ImageView
+                        android:id="@+id/imgKonser2"
+                        android:layout_width="103dp"
+                        android:layout_height="130dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_toEndOf="@+id/imgAraba"
+                        android:background="@drawable/konser2" />
+
+                </RelativeLayout>
+
+            </ScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="10dp"
+                android:text="Kategoriler"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>
